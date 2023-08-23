@@ -1,0 +1,17 @@
+{
+    "date": "0",
+    "title": "FOR FUTURE. WHEN CONNECTED TO A DATABASE",
+    "content": "HELLO",
+    "likes": "5",
+    "comments": [
+        {
+            "commenter": "anon",
+            "comment": "good"
+        },
+        {
+            "commenter": "ric",
+            "comment": "nicee"
+        }
+    ],
+    "shares": "1"
+}

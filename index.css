@@ -1,0 +1,200 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    :root{
+        --areaPostWidth: 95vw;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    :root{
+        --areaPostWidth: 50vw;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+
+:root{
+    --padding: calc(100vh * 0.001);
+
+    --default-background-color: white;
+    --default-color: black;
+    --default-post-background-color: #EEEEEE;
+
+    --default-like-logo: url(/images/defaults/default-like-logo-black.png);
+    --default-comment-logo: url(/images/defaults/default-comment-logo-black.png);
+    --default-share-logo: url(/images/defaults/default-share-logo-black.png);
+}
+
+body{
+    margin: 1px;
+    background-color: var(--default-background-color);
+    color: var(--default-color);
+    overflow-x: hidden;
+}
+
+nav{
+    margin-bottom: 2%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: var(--default-background-color);
+
+    display: flex;
+    justify-content: space-between;
+}
+/* 
+nav #menu{
+
+}
+
+nav #profile{
+
+} */
+#main-content{
+    
+
+    display: flex;
+    justify-content: center;
+}
+
+#areaPost{
+    width: var(--areaPostWidth);
+}
+
+.post{
+    margin-bottom: 3%;
+    background-color: var(--default-post-background-color);
+}
+
+/* Post Layout */
+    .post .post-top{
+        height: calc(100vh * 0.07);
+        /* background-color: blue; */
+        padding: var(--padding);
+        overflow: hidden;
+
+        display: flex;
+        align-items: center;
+        gap: 3%;
+    }
+
+    .post .post-body{
+        max-height: calc(100vh * 0.6);
+        /* background-color: gray; */
+        overflow: hidden;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .post .post-bottom{
+        height: calc(100vh * 0.05);
+        /* background-color: yellow; */
+        overflow: hidden;
+
+        display: flex;
+        align-items: center;
+    }
+
+/* Post Layout - Top */
+    .post .post-poster-photo{
+        width: calc(100vh * 0.07);
+        height: calc(100vh * 0.07);
+        background-image: url(/images/defaults/default-profile-photo.jpg);
+        background-size: cover;
+        border-radius: 50%;
+        border-style: solid black 5px;
+    }
+
+/* Post Layout - Body */
+    .post .post-caption{
+        width: 100%;
+        max-height: calc(100vh * 0.2);
+        /* background-color: aqua; */
+        overflow-y: auto;
+        word-wrap: break-word;
+
+    }
+
+    .post .post-media{
+        width: calc(100vh * 0.5);
+        height: calc(100vh * 0.5);
+        
+        /* background-color: burlywood; */
+        display:none;
+        /* background-image: url(/images/defaults/default-profile-photo.jpg); */
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+/* Post Layout - Bottom */
+    .post .post-like{
+        width: calc(100vw * 0.2);
+        /* background-color: violet; */
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+    }
+        .post .post-like-logo{
+            width: calc(100vh * 0.05);
+            height: calc(100vh * 0.05);
+            background-image: var(--default-like-logo);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+
+    .post .post-comment{
+        width: calc(100vw * 0.6);
+        /* background-color: rebeccapurple; */
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+    }
+        .post .post-comment-logo{
+            width: calc(100vh * 0.05);
+            height: calc(100vh * 0.05);
+            background-image: var(--default-comment-logo);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;  
+        }
+
+    .post .post-share{
+        width: calc(100vw * 0.2);
+        /* background-color: purple; */
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+    }
+        .post .post-share-logo{
+            width: calc(100vh * 0.05);
+            height: calc(100vh * 0.05);
+            background-image: var(--default-share-logo);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
